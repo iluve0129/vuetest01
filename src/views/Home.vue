@@ -1,6 +1,5 @@
 <template>
   <v-content>
-    <!-- <HelloWorld /> -->
     <v-container class="d-flex justify-center">
       <v-flex xs8 md8>
         <DataTable class="mx-auto" />
@@ -11,7 +10,6 @@
 
 <script lang="ts">
 import Vue from "vue";
-// import HelloWorld from "../components/HelloWorld.vue";
 import DataTable from "../components/DataTable.vue";
 
 export default Vue.extend({
