@@ -58,5 +58,10 @@ export default new Router({
         },
       ],
     },
+    {
+      path: '/funcx',
+      name: 'funcx',
+      component: () => import('./views/Func-X.vue'),
+    },
   ],
 });
