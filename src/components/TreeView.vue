@@ -1,4 +1,9 @@
 <template>
+  <!-- Dark系カラーにする場合の設定
+  <div class="blue-grey darken-4">
+    <v-treeview color="lime" class="white--text" hoverable activatable :items="items"></v-treeview>
+  </div>
+  -->
   <v-treeview hoverable activatable :items="items"></v-treeview>
 </template>
 

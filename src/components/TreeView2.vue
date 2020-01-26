@@ -1,6 +1,6 @@
 <template>
   <v-card>
-    <v-card-title class="indigo white--text headline">User Directory</v-card-title>
+    <v-card-title class="warning white--text headline">User Directory</v-card-title>
     <v-row class="pa-4" justify="space-between">
       <v-col cols="5">
         <v-treeview

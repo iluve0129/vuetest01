@@ -9,22 +9,11 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn class="ma-1" dark>
-        <v-icon>mdi-car-side</v-icon>
-        <router-link class="ma-1" tag="div" to="/funcx">FuncX-menu1</router-link>
-      </v-btn>
-      <v-btn class="ma-1" dark>
-        <v-icon>mdi-chart-bell-curve</v-icon>
-        <router-link class="ma-1" tag="div" to="/funcx">FuncX-menu2</router-link>
-      </v-btn>
-      <v-btn class="ma-1" dark>
-        <v-icon>mdi-file-find-outline</v-icon>
-        <router-link class="ma-1" tag="div" to="/funcx">FuncX-menu3</router-link>
-      </v-btn>
-      <v-btn class="ma-1" dark>
-        <v-icon>mdi-settings-outline</v-icon>
-        <router-link class="ma-1" tag="div" to="/funcx">FuncX-menu4</router-link>
-      </v-btn>
+      <Dialog />
+      <Dialog />
+      <Dialog />
+      <Dialog />
+
       <v-spacer></v-spacer>
 
       <v-btn href target="_blank" text>
@@ -37,9 +26,13 @@
 
 <script lang="ts">
 import Vue from "vue";
+import Dialog from "../../components/Dialog.vue";
 
 export default Vue.extend({
   name: "MenuFuncX",
+  components: {
+    Dialog
+  },
 
   data: () => ({
     //

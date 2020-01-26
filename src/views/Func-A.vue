@@ -1,21 +1,17 @@
 <template>
-  <div>
+  <v-container fluid fill-height class="align-start">
     <MenuFuncA />
-    <v-container fluid class="grey lighten-5">
-      <div class="full-width">
-        <v-row>
-          <v-col cols="3">
-            <v-card>
-              <TreeView />
-            </v-card>
-          </v-col>
-          <v-col cols="9">
-            <v-card>other contents</v-card>
-          </v-col>
-        </v-row>
-      </div>
-    </v-container>
-  </div>
+    <v-row>
+      <v-col cols="3">
+        <v-card>
+          <TreeView />
+        </v-card>
+      </v-col>
+      <v-col cols="9">
+        <v-card>other contents</v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script lang="ts">

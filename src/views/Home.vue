@@ -1,12 +1,12 @@
-<template>
-  <div>
+<template >
+  <v-container fluid fill-height>
     <MenuHome />
-    <v-container class="d-flex justify-center">
-      <v-flex xs8 md8>
-        <DataTable class="mx-auto" />
-      </v-flex>
-    </v-container>
-  </div>
+    <v-row fluid class="justify-center">
+      <v-col cols="8">
+        <DataTable />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script lang="ts">

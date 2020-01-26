@@ -1,10 +1,10 @@
 <template>
-  <v-content>
+  <v-container fluid fill-height class="align-start">
     <MenuFuncX />
-    <div class="about">
+    <div>
       <h1>This is page of Function-X</h1>
     </div>
-  </v-content>
+  </v-container>
 </template>
 
 <script lang="ts">

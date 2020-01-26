@@ -1,12 +1,14 @@
 <template>
-  <v-card>
-    <v-card-title>
-      News
-      <v-spacer></v-spacer>
-    </v-card-title>
+  <div>
+    <v-card>
+      <v-card-title>
+        News
+        <v-spacer></v-spacer>
+      </v-card-title>
 
-    <v-data-table :headers="headers" :items="newsitems" :items-per-page="5" class="elevation-1"></v-data-table>
-  </v-card>
+      <v-data-table :headers="headers" :items="newsitems" :items-per-page="5" class="elevation-3"></v-data-table>
+    </v-card>
+  </div>
 </template>
 
 <script lang="ts">

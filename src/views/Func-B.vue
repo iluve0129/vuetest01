@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <v-container fluid fill-height class="align-start">
     <MenuFuncB />
     <v-container fluid>
       <TreeView2 />
     </v-container>
-  </div>
+  </v-container>
 </template>
 
 <script lang="ts">
