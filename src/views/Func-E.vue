@@ -21,6 +21,10 @@
         <v-text-field id="text1" label="テキスト" @input="updateField({id:'text1',value:$event})"></v-text-field>
         -->
         <v-file-input @change="getFileName" accept="image/*" label="File input"></v-file-input>
+
+        <v-file-input label="テキストファイルを選択" @change="getFileContent" />
+
+        {{ content }}
       </v-card>
     </v-container>
   </v-container>
@@ -37,11 +41,36 @@ export default Vue.extend({
   components: {
     MenuFuncX
   },
-  data() {},
+  data() {
+    return {
+      content: ""
+    };
+  },
   methods: {
     getFileName(e) {
       console.log("fileが選択されました。");
       console.log(e.name);
+    },
+
+    async getFileContent(file) {
+      try {
+        const content = await this.readFileAsync(file);
+        this.content = content;
+      } catch (e) {
+        console.log(e);
+      }
+    },
+    readFileAsync(file) {
+
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+          resolve(reader.result);
+        };
+        reader.onerror = reject;
+        reader.readAsText(file);
+      });
+      
     }
   }
 });
