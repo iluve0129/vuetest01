@@ -10,19 +10,22 @@
 
     <v-btn class="ma-1" color="primary">
       <v-icon>mdi-car-side</v-icon>
-      <router-link class="ma-1" tag="div" to="/funca">Func-A</router-link>
+      <router-link tag="div" to="/funca">Func-A</router-link>
     </v-btn>
     <v-btn class="ma-1" color="warning">
       <v-icon>mdi-chart-bell-curve</v-icon>
-      <router-link class="ma-1" tag="div" to="/funcb">Func-B</router-link>
+      <router-link tag="div" to="/funcb">Func-B</router-link>
     </v-btn>
     <v-btn class="ma-1" color="error">
       <v-icon>mdi-file-find-outline</v-icon>
-      <router-link class="ma-1" tag="div" to="/funcc">Func-C</router-link>
+      <router-link tag="div" to="/funcc">Func-C</router-link>
     </v-btn>
     <v-btn class="ma-1" color="success">
       <v-icon>mdi-settings-outline</v-icon>
-      <router-link class="ma-1" tag="div" to="/funcd">Func-D</router-link>
+      <router-link tag="div" to="/funcd">Func-D</router-link>
+    </v-btn>
+    <v-btn class="ma-1" color="perple">
+      <router-link tag="div" to="/funce">Func-E</router-link>
     </v-btn>
     <v-spacer></v-spacer>
 

@@ -59,6 +59,11 @@ export default new Router({
       ],
     },
     {
+      path: '/funce',
+      name: 'funce',
+      component: () => import('./views/Func-E.vue'),
+    },
+    {
       path: '/funcx',
       name: 'funcx',
       component: () => import('./views/Func-X.vue'),

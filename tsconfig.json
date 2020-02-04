@@ -25,7 +25,9 @@
       "dom",
       "dom.iterable",
       "scripthost"
-    ]
+    ],
+    // 暗黙のanyはエラー扱い「しない」
+    "noImplicitAny": false,
   },
   "include": [
     "src/**/*.ts",
